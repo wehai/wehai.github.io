@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!--
+      This is the page head - it contains info the browser uses to display the page
+      You won't see what's in the head in the page
+      Scroll down to the body element for the page content
+    -->
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="icon"
+      href="https://cdn.glitch.global/f89b6116-5e9f-4c1c-aa54-29b2611ffc82/streetlamp.png?v=1674242830652"
+    />
+
+    <title>Record!</title>
+
+    <!-- Meta tags for SEO and social sharing -->
+    <link rel="canonical" href="https://glitch-hello-website.glitch.me/" />
+
+    <meta property="og:title" content="Record!" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://glitch-hello-website.glitch.me/" />
+    <meta
+      property="og:description"
+      content="A simple website, built with Glitch. Remix it to get your own."
+    />
+
+    <!-- Import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css" />
+
+    <!-- Import the webpage's javascript file -->
+  </head>
+  <body>
+ <h1>
+     <a>LAMP</a> <a>POST</a> 
+    </h1>
+    
+    <div class="imgwrapper">
+      <img
+        src="https://cdn.glitch.global/f89b6116-5e9f-4c1c-aa54-29b2611ffc82/lamppost2.png?v=1674244403353"
+        alt="lamp post icon"
+      />
+      <img
+        src="https://cdn.glitch.global/f89b6116-5e9f-4c1c-aa54-29b2611ffc82/streetlamp.png?v=1674242830652"
+        alt="lamp post icon"
+      />
+      <p>Bergmannstraße 43</p>
+      <p>Gärtnerstraße 13</p>
+    </div>
+     <p class="currentlamp"> Bergmannstraße 40</p>
+     <div id="background2"> </div>
+    <div id="recordCanvas"></div>
+    <!--rec Button-->
+      <div id="minicircleRec"></div>
+      <div id="circleRec"></div>
+      <div id="btnText"><a id="textin"></a></div>
+      <div id="clickingEvent" onclick="recBtnClicked()"></div>
+      
+      
+    
+    <div id="wrapperw">
+  <div class="iconwrapper">
+    <p></p><p onclick="saveBtn()">⦿</p><p></p>
+    <p onclick="playBtn()">◎</p><p></p><p onclick="deleteBtn()">◉</p>
+    </div>
+     
+    </div>
+    
+
+    <!-- <img src="https://cdn.glitch.global/f89b6116-5e9f-4c1c-aa54-29b2611ffc82/lamppost.jpeg?v=1674129212153" alt="Lamp Post"> -->
+    <script src="js/recorder.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.5.0/p5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.5.0/addons/p5.sound.min.js"></script>
+    <script src="/scriptp5.js"></script>
+   
+  </body>
+</html>
